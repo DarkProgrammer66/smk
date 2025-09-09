@@ -1,18 +1,14 @@
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import Testimonial from "../components/Testimonial";
+import Hero from "../components/Hero";
+import { Container, Row, Col, Card, Button, Carousel } from "react-bootstrap";
 
 function Home() {
   return (
     <>
+     
+
       {/* Hero Section */}
-      <div className="bg-light text-center p-5">
-        <h1>Selamat Datang di Website Sekolah</h1>
-        <p className="lead">
-          Tempat informasi resmi kegiatan & pengumuman sekolah.
-        </p>
-        <Button variant="primary" href="/about">
-          Lihat Profil Sekolah
-        </Button>
-      </div>
+      <Hero />
 
       {/* PPDB */}
 
@@ -30,11 +26,13 @@ function Home() {
         <Row>
           <Col md={4}>
             <Card className="shadow">
-              <Card.Img variant="top" src="images/event1.jpg" />
+              <Card.Img variant="top" src="/images/news/paskibra1.jpg" />
               <Card.Body>
-                <Card.Title>Kegiatan Upacara</Card.Title>
+                <Card.Title>TIM PASKIBRA</Card.Title>
                 <Card.Text>
-                  Upacara bendera dilaksanakan setiap Senin dengan khidmat.
+                  Salam hormat untuk Tim Paskibra!
+Tegap langkahmu, tinggi pengabdianmu, dan semangatmu menjadi teladan bagi kita semua.
+Penghargaan ini untuk kalian!
                 </Card.Text>
                 <Button variant="primary" href="/news">
                   Baca Selengkapnya
@@ -44,11 +42,14 @@ function Home() {
           </Col>
           <Col md={4}>
             <Card className="shadow">
-              <Card.Img variant="top" src="images/event2.jpg" />
+              <Card.Img variant="top" src="/images/news/futsal1.jpg" />
               <Card.Body>
-                <Card.Title>Lomba Mixology</Card.Title>
+                <Card.Title>Eskul Futsal</Card.Title>
                 <Card.Text>
-                  Siswa meraih juara lomba mixology tingkat kota.
+                  Prestasi Membanggakan!
+Selamat kepada tim futsal SMK Taruna Budi Bangsa yang berhasil meraih Juara 3 dalam Turnamen Futsal Pesta Pelajar tingkat Kabupaten Bogor.
+
+Pertandingan digelar di Lapangan Futsal Poncol, Cilebut pada Minggu, 07 September 2025, dengan komposisi pemain dari kelas X dan XI.
                 </Card.Text>
                 <Button variant="primary" href="/news">
                   Baca Selengkapnya
@@ -58,11 +59,11 @@ function Home() {
           </Col>
           <Col md={4}>
             <Card className="shadow">
-              <Card.Img variant="top" src="images/event3.jpg" />
+              <Card.Img variant="top" src="/images/news/upacara2.jpg" />
               <Card.Body>
-                <Card.Title>Kegiatan Paskibra</Card.Title>
-                <Card.Text>
-                  Paskibra melatih kedisiplinan dan kebersamaan siswa.
+                <Card.Title>Kemerdekaan</Card.Title>
+                <Card.Text>SMK Taruna Budi Bangsa memperingati Hari Kemerdekaan Republik Indonesia ke-80 dengan penuh khidmat melalui upacara bendera.
+Mari terus menjaga semangat perjuangan dan mengisi kemerdekaan dengan karya dan prestasi! ✨
                 </Card.Text>
                 <Button variant="primary" href="/news">
                   Baca Selengkapnya
@@ -72,6 +73,7 @@ function Home() {
           </Col>
         </Row>
       </Container>
+      <Testimonial />
     </>
   );
 }

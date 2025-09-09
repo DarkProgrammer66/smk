@@ -1,16 +1,19 @@
-import { Card, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
-function NewsCard({ image, title, text }) {
+function AboutSection() {
   return (
-    <Card className="shadow mb-4">
-      <Card.Img variant="top" src={image} alt={title} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{text}</Card.Text>
-        <Button variant="primary" href="/news">Baca Selengkapnya</Button>
-      </Card.Body>
-    </Card>
+    <Container className="my-5">
+      <h2 className="mb-4">Profil Sekolah</h2>
+      <p><strong>Visi:</strong> Mencetak generasi yang beriman, berilmu, dan berkarakter.</p>
+      <p><strong>Misi:</strong></p>
+      <ul>
+        <li>Menyelenggarakan pendidikan berkualitas.</li>
+        <li>Mengembangkan potensi siswa secara optimal.</li>
+        <li>Mewujudkan lingkungan belajar yang aman dan nyaman.</li>
+      </ul>
+      <p>Sejarah singkat sekolah dapat dituliskan di sini...</p>
+    </Container>
   );
 }
 
-export default NewsCard;
+export default AboutSection;
