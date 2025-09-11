@@ -5,9 +5,10 @@ function DarkVariantExample() {
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img
-          className="d-block w-25"
-          src="/images/news/gedung1.jpg"
+          className="d-block w-100"
+          src="/images/gallery1.jpg"
           alt="First slide"
+          style={{ height: "60vh", objectFit: "cover" }}
         />
         <Carousel.Caption>
           <h5>First slide label</h5>
@@ -17,8 +18,9 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=eee"
+          src="/images/gallery2.jpg"
           alt="Second slide"
+          style={{ height: "60vh", objectFit: "cover", margin: "m-50" }}
         />
         <Carousel.Caption>
           <h5>Second slide label</h5>
@@ -28,8 +30,9 @@ function DarkVariantExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=e5e5e5"
+          src="/images/gallery3.jpg"
           alt="Third slide"
+          style={{ height: "60vh", objectFit: "cover" }}
         />
         <Carousel.Caption>
           <h5>Third slide label</h5>

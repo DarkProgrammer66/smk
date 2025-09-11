@@ -1,11 +1,26 @@
 import { Container } from "react-bootstrap";
+import Image from "react-bootstrap/Image";
 
 function AboutSection() {
   return (
     <Container className="my-5">
+      <img
+        className="d-block w-100"
+        src="/images/news/gedung1.jpg"
+        alt="Gedung 2"
+        style={{
+          height: "60vh",
+          objectFit: "cover",
+        }}
+      />
       <h2 className="mb-4">Profil Sekolah</h2>
-      <p><strong>Visi:</strong> Mencetak generasi yang beriman, berilmu, dan berkarakter.</p>
-      <p><strong>Misi:</strong></p>
+      <p>
+        <strong>Visi:</strong> Mencetak generasi yang beriman, berilmu, dan
+        berkarakter.
+      </p>
+      <p>
+        <strong>Misi:</strong>
+      </p>
       <ul>
         <li>Menyelenggarakan pendidikan berkualitas.</li>
         <li>Mengembangkan potensi siswa secara optimal.</li>
