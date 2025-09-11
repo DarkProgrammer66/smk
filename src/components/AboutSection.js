@@ -6,10 +6,10 @@ function AboutSection() {
     <Container className="my-5">
       <img
         className="d-block w-100"
-        src="/images/news/gedung1.jpg"
+        src="/images/news/gedung2.jpg"
         alt="Gedung 2"
         style={{
-          height: "60vh",
+          height: "65vh",
           objectFit: "cover",
         }}
       />
